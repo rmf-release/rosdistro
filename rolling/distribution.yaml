@@ -10,7 +10,7 @@ repositories:
     doc:
       type: git
       url: https://github.com/osrf/rmf_core.git
-      version: 1.1.0
+      version: 1.9999.0
     release:
       packages:
       - ament_cmake_catch2
@@ -28,51 +28,20 @@ repositories:
       - rmf_utils
       - rmf_workcell_msgs
       tags:
-        release: release/foxy/{package}/{version}
+        release: release/rolling/{package}/{version}
       url: https://github.com/rmf-release/rmf_core-release.git
-      version: 1.1.0-2
+      version: 1.9999.0-5
     source:
       test_pull_requests: true
       type: git
       url: https://github.com/osrf/rmf_core.git
-      version: 1.1.0
-    status: developed
-  rmf_demos:
-    doc:
-      type: git
-      url: https://github.com/osrf/rmf_demos.git
-      version: 1.1.0
-    release:
-      packages:
-      - demos
-      - rmf_demo_assets
-      - rmf_demo_maps
-      - rmf_demo_tasks
-      - rmf_demos_dashboard_resources
-      - rmf_gazebo_plugins
-      - rmf_rviz_plugin
-      tags:
-        release: release/foxy/{package}/{version}
-      url: https://github.com/rmf-release/rmf_demos-release.git
-      version: 1.1.0-2
-    source:
-      test_pull_requests: true
-      type: git
-      url: https://github.com/osrf/rmf_demos.git
-      version: 1.1.0
-    status: developed
-  menge:
-    release:
-      tags:
-        release: release/foxy/{package}/{version}
-      url: https://github.com/rmf-release/menge-release.git
-      version: 1.1.0-2
+      version: 1.9999.0
     status: developed
   traffic_editor:
     doc:
       type: git
       url: https://github.com/osrf/traffic_editor.git
-      version: 1.1.0
+      version: 1.9999.0
     release:
       packages:
       - building_gazebo_plugins
@@ -83,20 +52,36 @@ repositories:
       - test_maps
       - traffic_editor
       tags:
-        release: release/foxy/{package}/{version}
+        release: release/rolling/{package}/{version}
       url: https://github.com/rmf-release/traffic_editor-release.git
-      version: 1.1.0-10
+      version: 1.9999.0-5
     source:
       test_pull_requests: true
       type: git
       url: https://github.com/osrf/traffic_editor.git
-      version: 1.1.0
+      version: 1.9999.0
+    status: developed
+  traffic_editor_assets:
+    doc:
+      type: git
+      url: https://github.com/osrf/traffic_editor_assets.git
+      version: 1.9999.0
+    release:
+      tags:
+        release: release/rolling/{package}/{version}
+      url: https://github.com/rmf-release/traffic_editor_assets-release.git
+      version: 1.9999.0-1
+    source:
+      test_pull_requests: true
+      type: git
+      url: https://github.com/osrf/traffic_editor_assets.git
+      version: 1.9999.0
     status: developed
   rmf_schedule_visualizer:
     doc:
       type: git
       url: https://github.com/osrf/rmf_schedule_visualizer.git
-      version: 1.1.0
+      version: 1.9999.0
     release:
       packages:
       - building_systems_visualizer
@@ -106,39 +91,82 @@ repositories:
       - rviz2_plugin
       - visualizer
       tags:
-        release: release/foxy/{package}/{version}
+        release: release/rolling/{package}/{version}
       url: https://github.com/rmf-release/rmf_schedule_visualizer-release.git
-      version: 1.1.0-2
+      version: 1.9999.0-2
     source:
       test_pull_requests: true
       type: git
       url: https://github.com/osrf/rmf_schedule_visualizer.git
-      version: 1.1.0
+      version: 1.9999.0
+    status: developed
+  rmf_demos:
+    doc:
+      type: git
+      url: https://github.com/osrf/rmf_demos.git
+      version: 1.9999.0
+    release:
+      packages:
+      - demos
+      - rmf_demo_assets
+      - rmf_demo_maps
+      - rmf_demo_tasks
+      - rmf_demos_dashboard_resources
+      - rmf_gazebo_plugins
+      - rmf_ignition_plugins
+      - rmf_plugins_common
+      - rmf_rviz_plugin
+      tags:
+        release: release/rolling/{package}/{version}
+      url: https://github.com/rmf-release/rmf_demos-release.git
+      version: 1.9999.0-4
+    source:
+      test_pull_requests: true
+      type: git
+      url: https://github.com/osrf/rmf_demos.git
+      version: 1.9999.0
+    status: developed
+  menge:
+    doc:
+      type: git
+      url: https://github.com/osrf/menge_core.git
+      version: 1.9999.0
+    release:
+    release:
+      tags:
+        release: release/rolling/{package}/{version}
+      url: https://github.com/rmf-release/menge-release.git
+      version: 1.9999.0-4
+    source:
+      test_pull_requests: true
+      type: git
+      url: https://github.com/osrf/menge_core.git
+      version: 1.9999.0
+    status: developed
   free_fleet:
     doc:
       type: git
       url: https://github.com/osrf/free_fleet.git
-      version: 1.1.0
+      version: 1.9999.0
     release:
       packages:
       - free_fleet
-      - free_fleet_examples
       - free_fleet_server
       tags:
-        release: release/foxy/{package}/{version}
+        release: release/rolling/{package}/{version}
       url: https://github.com/rmf-release/free_fleet-release.git
-      version: 1.1.0-1
+      version: 1.9999.0-2
     source:
       test_pull_requests: true
       type: git
       url: https://github.com/osrf/free_fleet.git
-      version: 1.1.0
+      version: 1.9999.0
     status: developed
   soss:
     doc:
       type: git
       url: https://github.com/osrf/soss.git
-      version: 2.1.0
+      version: 2.9999.0
     release:
       packages:
       - soss-core
@@ -150,30 +178,14 @@ repositories:
       - soss-websocket
       - soss-websocket-test
       tags:
-        release: release/foxy/{package}/{version}
+        release: release/rolling/{package}/{version}
       url: https://github.com/rmf-release/soss-release.git
-      version: 2.1.0-4
+      version: 2.9999.0-3
     source:
       test_pull_requests: true
       type: git
       url: https://github.com/osrf/soss.git
-      version: 2.1.0
-    status: developed
-  traffic_editor_assets:
-    doc:
-      type: git
-      url: https://github.com/osrf/traffic_editor_assets.git
-      version: 1.1.0
-    release:
-      tags:
-        release: release/foxy/{package}/{version}
-      url: https://github.com/rmf-release/traffic_editor_assets-release.git
-      version: 1.0.0-1
-    source:
-      test_pull_requests: true
-      type: git
-      url: https://github.com/osrf/traffic_editor_assets.git
-      version: 1.1.0
+      version: 2.9999.0
     status: developed
 type: distribution
 version: 2
